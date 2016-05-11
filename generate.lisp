@@ -46,7 +46,10 @@
   (circle-parameter (circles (circle-colors (random-ids (random-circle-count *circle-colors-count*) *circle-colors-count*)))))
 
 (defun text-coordinates ()
-  (concatenate 'string (write-to-string (floor (/ *picture-width* 3))) "," (write-to-string (floor (/ *picture-height* 2)))))
+  (concatenate 'string
+               (write-to-string (floor (/ *picture-width* 20)))
+               ","
+               (write-to-string (floor (/ *picture-height* 2)))))
 
 (defun text-parameter (id)
   (concatenate 'string "text " (text-coordinates) " 'Test Image #" (write-to-string id) "'"))
