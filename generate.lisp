@@ -7,6 +7,7 @@
 (defparameter *picture-width* 1920)
 (defparameter *picture-height* 1080)
 (defparameter *text-size* 60)
+(defparameter *font* "DejaVu-Sans")
 
 (defparameter *picture-size*
   (concatenate 'string
@@ -58,7 +59,7 @@
   (concatenate 'string "image_" (write-to-string id) ".png"))
 
 (defun im-args (id)
-  (list "-size" *picture-size* "xc:" "-sparse-color" "Shepards" (random-circle-parameter) "-pointsize" (write-to-string *text-size*) "-draw" (text-parameter id) (image-filename id)))
+  (list "-size" *picture-size* "xc:" "-sparse-color" "Shepards" (random-circle-parameter) "-font" *font* "-pointsize" (write-to-string *text-size*) "-draw" (text-parameter id) (image-filename id)))
 
 (defun create-image (id)
   (format t "Writing image #~a~%" id)

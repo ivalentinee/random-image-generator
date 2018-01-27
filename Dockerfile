@@ -1,7 +1,7 @@
 FROM ubuntu
 
 RUN apt update -qq && \
-    apt install -y sbcl curl libev4 imagemagick --no-install-recommends && \
+    apt install -y sbcl curl libev4 imagemagick fonts-dejavu-core --no-install-recommends && \
     apt clean
 
 # RUN curl -O https://beta.quicklisp.org/quicklisp.lisp && \
