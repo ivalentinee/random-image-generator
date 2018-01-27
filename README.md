@@ -2,10 +2,10 @@
 
 Simple script to generate sample images. It draws colored circles with text "Test image #N".
 
-Images are hardcoded to 1920x1080 resolution.
+Images are hardcoded to 1920x1080 resolution (but you're free to hack the code).
 
 ## A note on history of this project
-I was young and naive so I wrote this app in common lisp. Sorry.
+I was young and naive so I wrote this in common lisp. Sorry.
 
 ## Building app
 ```sh
