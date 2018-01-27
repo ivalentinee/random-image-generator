@@ -1,6 +1,6 @@
 # Random image generator
 
-Simple script to generate sample images.
+Simple script to generate sample images. It draws colored circles with text "Test image #N".
 
 Images are hardcoded to 1920x1080 resolution.
 
